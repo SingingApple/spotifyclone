@@ -29,6 +29,13 @@ const App = () => {
           payload: user,
         });
       });
+      spotify.getPlaylist("37i9dQZF1E38CLhjz9tBan").then((response) => {
+        console.log(response);
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          payload: response,
+        });
+      });
       spotify
         .getUserPlaylists()
         .then((playlists) => {
