@@ -1,7 +1,7 @@
 export const initialState = {
   user: null,
   playlists: [],
-  // null,
+
   token: null,
 
   playing: false,
